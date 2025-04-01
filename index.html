@@ -3,10 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration and Contacts</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to CSS for styling -->
+    <title>Structured HTML Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ol {
+            background: #fff;
+            padding: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        img {
+            display: block;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
+    <h1>Welcome to My Web Page</h1>
+    
     <!-- Ordered List with Roman Numerals -->
     <h2>Ordered List</h2>
     <ol type="I">
@@ -17,53 +78,49 @@
         <li>Item Five</li>
     </ol>
 
-    <!-- External Image -->
-    <h2>External Image</h2>
-    <img src="https://www.pexels.com/photo/12345" alt="Sample Image from Pexels" width="500">
-    
-    <!-- Table of Contacts -->
-    <h2>Contacts Table</h2>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Address</th>
-                <th>Mobile</th>
-                <th>Email</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>John Doe</td>
-                <td>123 Main St</td>
-                <td>+1234567890</td>
-                <td>john@example.com</td>
-            </tr>
-            <tr>
-                <td>Jane Smith</td>
-                <td>456 Elm St</td>
-                <td>+9876543210</td>
-                <td>jane@example.com</td>
-            </tr>
-            <tr>
-                <td>Robert Brown</td>
-                <td>789 Pine St</td>
-                <td>+1122334455</td>
-                <td>robert@example.com</td>
-            </tr>
-            <tr>
-                <td>Alice Johnson</td>
-                <td>101 Maple Ave</td>
-                <td>+9988776655</td>
-                <td>alice@example.com</td>
-            </tr>
-            <tr>
-                <td>Michael Lee</td>
-                <td>202 Oak Dr</td>
-                <td>+6655443322</td>
-                <td>michael@example.com</td>
-            </tr>
-        </tbody>
+    <!-- External Image from Pexels -->
+    <h2>Beautiful Image</h2>
+    <img src="https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg" alt="Beautiful Scenery" width="600">
+
+    <!-- Contacts Table -->
+    <h2>Contacts</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Brian Otieno</td>
+            <td>123 Moi Avenue, Nairobi</td>
+            <td>+254712345678</td>
+            <td>brian.otieno@example.com</td>
+        </tr>
+        <tr>
+            <td>Amina Hassan</td>
+            <td>456 Kenyatta Road, Mombasa</td>
+            <td>+254723456789</td>
+            <td>amina.hassan@example.com</td>
+        </tr>
+        <tr>
+            <td>Samuel Kiprono</td>
+            <td>789 Eldoret Street, Eldoret</td>
+            <td>+254734567890</td>
+            <td>samuel.kiprono@example.com</td>
+        </tr>
+        <tr>
+            <td>Grace Wanjiku</td>
+            <td>321 Thika Road, Thika</td>
+            <td>+254745678901</td>
+            <td>grace.wanjiku@example.com</td>
+        </tr>
+        <tr>
+            <td>David Mwangi</td>
+            <td>654 Nyerere Avenue, Kisumu</td>
+            <td>+254756789012</td>
+            <td>david.mwangi@example.com</td>
+        </tr>
     </table>
 
     <!-- Registration Form -->
@@ -71,30 +128,25 @@
     <form action="#" method="POST">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your name" required>
-        <br><br>
-
+        
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        <br><br>
-
+        
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" placeholder="Enter a password" required>
-        <br><br>
-
+        <input type="password" id="password" name="password" placeholder="Enter a secure password" required>
+        
         <label for="dob">Date of Birth:</label>
         <input type="date" id="dob" name="dob" required>
-        <br><br>
 
         <!-- Dropdown -->
-        <label for="country">Select Country:</label>
+        <label for="country">Country:</label>
         <select id="country" name="country" required>
-            <option value="">--Select--</option>
-            <option value="usa">USA</option>
-            <option value="uk">UK</option>
-            <option value="canada">Canada</option>
-            <option value="australia">Australia</option>
+            <option value="">Select your country</option>
+            <option value="kenya">Kenya</option>
+            <option value="uganda">Uganda</option>
+            <option value="tanzania">Tanzania</option>
+            <option value="rwanda">Rwanda</option>
         </select>
-        <br><br>
 
         <!-- Radio Buttons -->
         <label>Gender:</label>
@@ -102,7 +154,6 @@
         <label for="male">Male</label>
         <input type="radio" id="female" name="gender" value="female" required>
         <label for="female">Female</label>
-        <br><br>
 
         <!-- Checkboxes -->
         <label>Interests:</label>
@@ -112,9 +163,8 @@
         <label for="music">Music</label>
         <input type="checkbox" id="reading" name="interests" value="reading">
         <label for="reading">Reading</label>
-        <br><br>
 
-        <button type="submit">Register</button>
+        <input type="submit" value="Register">
     </form>
 </body>
 </html>
